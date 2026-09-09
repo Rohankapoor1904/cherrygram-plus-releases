@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
   <a href="https://github.com/Rohankapoor1904/cherrygram-plus-releases">
     <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=0,2,2&height=220&section=header&text=🍒%20Cherrygram%20Plus&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="Cherrygram Plus Banner" width="100%"/>
@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.16.1)
+## 📥 Downloads (Latest Stable v10.17.0)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link |
 |---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.16.1/CherrygramPlus-10.16.1-arm64-v8a.apk) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.16.1/CherrygramPlus-10.16.1-armeabi-v7a.apk) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.16.1/CherrygramPlus-10.16.1-universal.apk) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.0/CherrygramPlus-10.17.0-arm64-v8a.apk) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.0/CherrygramPlus-10.17.0-armeabi-v7a.apk) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.0/CherrygramPlus-10.17.0-universal.apk) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
@@ -39,6 +39,22 @@ Choose the optimal package for your device architecture:
 ---
 
 ## 🌟 Key Highlights & Exclusive Capabilities
+
+### 🛡 Proactive OOM Watchdog & Memory Optimization
+- **Active Heap Monitor**: Background watcher actively tracking memory usage and pruning volatile bitmap/image caches before low-memory crashes occur.
+- **Heap Diagnostics**: Live memory metrics table, manual cache pruning, and dynamic warning threshold sliders in Experimental settings.
+
+### ✨ Liquid Glass & iOS Pill Unread Badge
+- **Adaptive Header Aesthetics**: Liquid glass shader blur integrated into chat headers and action bars.
+- **Interactive Back Pill**: Smoothly animated unread count badge on the back button matching modern iOS aesthetics.
+
+### 🎁 Hidden & Deleted Star Gifts Store
+- **Gifts Discovery**: Discover and purchase hidden or deleted Telegram Star collectible gifts directly within the GiftSheet interface.
+
+### 🔕 Ignore Mentions & Channel Experience
+- **Spam Filtering**: Granular filter suppressing mass `@mention` notification pings in busy groups.
+- **Wide Channel Bubbles**: Expands channel messages across the screen for comfortable reading.
+- **Auto-Play Voice & Video**: Continuous sequential playback for audio notes and video messages.
 
 ### ⚡ Extreme Speed Boost 2.0
 - **Multi-Stream Acceleration**: Leverages parallel MTProto chunk streaming with up to 16 concurrent network workers.
