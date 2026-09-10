@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.17.0)
+## 📥 Downloads (Latest Stable v10.17.2)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link |
 |---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.0/CherrygramPlus-10.17.0-arm64-v8a.apk) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.0/CherrygramPlus-10.17.0-armeabi-v7a.apk) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.0/CherrygramPlus-10.17.0-universal.apk) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.2/CherrygramPlus-10.17.2-arm64-v8a.apk) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.2/CherrygramPlus-10.17.2-armeabi-v7a.apk) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.2/CherrygramPlus-10.17.2-universal.apk) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
@@ -40,13 +40,21 @@ Choose the optimal package for your device architecture:
 
 ## 🌟 Key Highlights & Exclusive Capabilities
 
+### 🛡 Anti-Delete Albums & Media Caption Bubble Rendering
+- **Album Background Preservation**: Full message bubble background rendering restored for deleted albums (grouped messages) and media with captions when Anti-Delete is active (`canViewDeletedMessages`).
+- **Seamless Group Re-binding**: Retained messages and multi-media group transitions accurately retain bubble layout without disappearing into raw media squares.
+
+### ✨ Liquid Glass & Center Pill Text Centering
+- **Pixel-Perfect Centering**: Completely resolved text cutoff and truncation in the top center pill capsule (`🍒 Cherrygra` with `m` cut off and subtitle clipped).
+- **Adaptive Header Aesthetics**: Liquid glass shader blur integrated into chat headers and action bars with iOS-style animated unread count badge on the back button (`< 3`).
+- **Wallpaper Top Fade Scrim**: Restored wallpaper background fade behind top ActionBar pills and status bar so mobile notification icons, clock, and top headers remain clean and legible.
+
+### 🔲 Seamless Chat Layout & Gap Elimination
+- **Bottom Message Alignment**: Restored exact bottom alignment between the chat message list and the chat input bar, eliminating empty gaps above the input bar.
+
 ### 🛡 Proactive OOM Watchdog & Memory Optimization
 - **Active Heap Monitor**: Background watcher actively tracking memory usage and pruning volatile bitmap/image caches before low-memory crashes occur.
 - **Heap Diagnostics**: Live memory metrics table, manual cache pruning, and dynamic warning threshold sliders in Experimental settings.
-
-### ✨ Liquid Glass & iOS Pill Unread Badge
-- **Adaptive Header Aesthetics**: Liquid glass shader blur integrated into chat headers and action bars.
-- **Interactive Back Pill**: Smoothly animated unread count badge on the back button matching modern iOS aesthetics.
 
 ### 🎁 Hidden & Deleted Star Gifts Store
 - **Gifts Discovery**: Discover and purchase hidden or deleted Telegram Star collectible gifts directly within the GiftSheet interface.
