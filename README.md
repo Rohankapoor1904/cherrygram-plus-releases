@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.17.2)
+## 📥 Downloads (Latest Stable v10.17.4)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link |
 |---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.2/CherrygramPlus-10.17.2-arm64-v8a.apk) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.2/CherrygramPlus-10.17.2-armeabi-v7a.apk) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.2/CherrygramPlus-10.17.2-universal.apk) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.4/CherrygramPlus-10.17.4-arm64-v8a.apk) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.4/CherrygramPlus-10.17.4-armeabi-v7a.apk) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.4/CherrygramPlus-10.17.4-universal.apk) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
@@ -39,6 +39,14 @@ Choose the optimal package for your device architecture:
 ---
 
 ## 🌟 Key Highlights & Exclusive Capabilities
+
+### 🏷 Saved Messages Tags Persistence
+- **Local Reaction Tags Preservation**: Restored SQLite reaction tag persistence for Saved Messages in `messages_v2`, preventing tags from resetting upon chat reloading or cache clears.
+- **Eager Tag Pre-loading**: Pre-fetches saved reaction tag data upon opening Saved Messages for zero-lag tag filtering.
+
+### 🛡 App Updater & Service Message Hardening
+- **Null Safety Guard**: Resolved application crash on updater check caused by null release payload handling.
+- **Service Action Filtering**: Filtered out group and channel service actions (member pins, join/leave events, photo changes) from deleted message tags.
 
 ### 🛡 Anti-Delete Albums & Media Caption Bubble Rendering
 - **Album Background Preservation**: Full message bubble background rendering restored for deleted albums (grouped messages) and media with captions when Anti-Delete is active (`canViewDeletedMessages`).
