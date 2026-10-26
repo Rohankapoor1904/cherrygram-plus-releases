@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.17.4)
+## 📥 Downloads (Latest Stable v10.19.13)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link |
 |---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.4/CherrygramPlus-10.17.4-arm64-v8a.apk) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.4/CherrygramPlus-10.17.4-armeabi-v7a.apk) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.17.4/CherrygramPlus-10.17.4-universal.apk) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.13/Cherrygram-10.19.13-TG-13.0.3-arm64-v8a.apk) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.13/Cherrygram-10.19.13-TG-13.0.3-armeabi-v7a.apk) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.13/Cherrygram-10.19.13-TG-13.0.3-universal.apk) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
