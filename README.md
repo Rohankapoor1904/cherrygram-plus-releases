@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.19.19)
+## 📥 Downloads (Latest Stable v10.20.0 - Telegram 13.1.1)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link | File Size |
 |---|---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.19/Cherrygram-10.19.19-TG-13.0.3-arm64-v8a.apk) | **49.9 MB** (52.3 MB) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.19/Cherrygram-10.19.19-TG-13.0.3-armeabi-v7a.apk) | **49.3 MB** (51.7 MB) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.19/Cherrygram-10.19.19-TG-13.0.3-universal.apk) | **59.5 MB** (62.4 MB) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.0/Cherrygram-10.20.0-TG-13.1.1-arm64-v8a.apk) | **49.9 MB** (52.3 MB) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.0/Cherrygram-10.20.0-TG-13.1.1-armeabi-v7a.apk) | **49.4 MB** (51.8 MB) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.0/Cherrygram-10.20.0-TG-13.1.1-universal.apk) | **59.5 MB** (62.4 MB) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
@@ -39,6 +39,14 @@ Choose the optimal package for your device architecture:
 ---
 
 ## 🌟 Key Highlights & Exclusive Capabilities
+
+### ⚡ Upstream Telegram 13.1.1 & Layer 232 Engine
+- **Layer 232 Protocol Upgrade**: Upgraded core MTProto layer to 232 with new reply headers and rich formatting metadata while preserving Cherrygram's Anti-Delete engine on dedicated flags.
+- **RichQuote Subsystem**: Native multi-part quote highlights, range offsets, and dynamic reply preview rendering.
+- **AI Tone & Assistant Integration**: Built-in AI composition tools directly in the chat input bar, customized with iOS-style adaptive capsule padding.
+- **KaTeX Formula Rendering in Instant View**: Integrated KaTeX math formula rendering into `ArticleViewer` with horizontal scrolling for complex formulas and equations.
+- **WebMessage Bridge Sandboxing**: Hardened origin validation and sandboxed JS bridge shims for mini-apps and bot web views.
+- **Weak Observer Leak Prevention**: Converted NotificationCenter event groups to weak references to eliminate memory leaks across long chat sessions.
 
 ### 💬 Adaptive Chat Bottom Bar & Floating Bubble Fix
 - **Restricted Chat Clean Layout**: Fixed visual artifacts in read-only and restricted groups ("Sending messages is not allowed in this group") where empty blurred circular side bubbles were rendered.
