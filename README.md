@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.19.14)
+## 📥 Downloads (Latest Stable v10.20.6)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link |
 |---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.14/Cherrygram-10.19.14-TG-13.0.3-arm64-v8a.apk) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.14/Cherrygram-10.19.14-TG-13.0.3-armeabi-v7a.apk) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.19.14/Cherrygram-10.19.14-TG-13.0.3-universal.apk) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.6/Cherrygram-10.20.6-TG-13.1.1-arm64-v8a.apk) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.6/Cherrygram-10.20.6-TG-13.1.1-armeabi-v7a.apk) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.6/Cherrygram-10.20.6-TG-13.1.1-universal.apk) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
@@ -39,6 +39,16 @@ Choose the optimal package for your device architecture:
 ---
 
 ## 🌟 Key Highlights & Exclusive Capabilities
+
+### 🤖 Smart Autonomous Auto-Reply Engine
+- **Autonomous Response Triggers**: Set flexible automated replies with custom keyword triggers, fallback default answers, and selective whitelist/blacklist filters across chats, groups, and contacts.
+- **MTProto Human Typing Emulation**: Automatically sends realistic typing indicators (`sendTyping()`) with human-like delays before dispatching replies, preventing automated bot detection or rate-limiting.
+- **Dedicated Management Hub**: Fully unlocked and accessible under *Cherrygram Settings > Actions > Auto-Reply*.
+
+### 🔓 Complete Content Protection Bypass & Unlimited View-Once
+- **Global No-Forwards Override**: Client-side removal of Telegram's `noforwards` restrictions across channels, groups, and direct chats. Freely copy text, forward messages, save to Gallery, save to Downloads, save to GIFs, save to Music, and open in external media players.
+- **Unlimited View-Once Replay**: Bypass self-destruct timers and deletion triggers on view-once photos and videos. Inspect media indefinitely without triggering remote deletion.
+- **System-Wide Screen Protection Bypass**: Override Android `FLAG_SECURE` window restrictions across secret chats, protected media view-once overlays, and restricted channels.
 
 ### 🏷 Saved Messages Tags Persistence
 - **Local Reaction Tags Preservation**: Restored SQLite reaction tag persistence for Saved Messages in `messages_v2`, preventing tags from resetting upon chat reloading or cache clears.
