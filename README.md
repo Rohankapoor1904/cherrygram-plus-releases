@@ -23,15 +23,15 @@
 
 ---
 
-## 📥 Downloads (Latest Stable v10.20.6)
+## 📥 Downloads (Latest Stable v10.22.3)
 
 Choose the optimal package for your device architecture:
 
 | Architecture | Recommended Devices | Download Link |
 |---|---|---|
-| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.6/Cherrygram-10.20.6-TG-13.1.1-arm64-v8a.apk) |
-| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.6/Cherrygram-10.20.6-TG-13.1.1-armeabi-v7a.apk) |
-| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.20.6/Cherrygram-10.20.6-TG-13.1.1-universal.apk) |
+| **ARM64-v8a (Recommended)** | Most modern Android devices (2016+) | [⬇️ Download ARM64 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.22.3/Cherrygram-10.22.3-TG-13.1.1-arm64-v8a.apk) |
+| **ARMeabi-v7a** | Older 32-bit smartphones and legacy tablets | [⬇️ Download ARMv7 APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.22.3/Cherrygram-10.22.3-TG-13.1.1-armeabi-v7a.apk) |
+| **Universal (All-in-One)** | Works on all Android CPUs | [⬇️ Download Universal APK](https://github.com/Rohankapoor1904/cherrygram-plus-releases/releases/download/v10.22.3/Cherrygram-10.22.3-TG-13.1.1-universal.apk) |
 
 > [!TIP]
 > Not sure which APK to pick? If your device was manufactured after 2017, download **ARM64-v8a** for best battery life and highest performance. Otherwise, pick **Universal**.
@@ -39,6 +39,23 @@ Choose the optimal package for your device architecture:
 ---
 
 ## 🌟 Key Highlights & Exclusive Capabilities
+
+### ⚡ Turbocharged Download & Upload Engine (v10.22.3)
+- **Eliminated 32KB Death Spiral**: Replaced failing 1MB requests with MTProto standard 512KB chunks, preventing `LIMIT_INVALID` rejections and eliminating the permanent fallback to slow 32KB chunks.
+- **8-Socket Parallel Download Striping**: Native C++ `Defines.h` socket pool expanded from 4 to 8 connections, perfectly matched with Java `ConnectionsManager`. Chunks are round-robin striped 1:1 across all 8 sockets for maximum throughput and zero head-of-line blocking.
+- **Zero Flood-Wait Upload Sliding Window**: Calibrated in-flight upload window to 2MB (4 chunks across 4 sockets on free accounts) and 4MB (8 chunks across 8 sockets on premium accounts), eliminating Telegram server-side `FLOOD_PREMIUM_WAIT` pauses and upload aborts.
+- **Cold-Start Download Button & Indicator Sync**: Dispatched `onDownloadingFilesChanged` on the UI thread when restoring pending downloads on startup, ensuring the download indicator in chat headers appears instantly.
+
+### 🔍 Exact Username, Bot & Global Entity Search Resolution
+- **MTProto Wire-Format Parity**: Resolved binary flags serialization mismatch in `TL_contacts_search`, allowing Telegram data centers to parse global search queries without RPC deserialization faults.
+- **Prefix-Agnostic Username Lookup**: Instant username matching in local databases, recent searches, and global searches whether queries are prepended with `@` (e.g. `@durov`) or searched raw (`durov`).
+- **Dedicated Bot & Channel Filtering**: Restored `bots = true` and `broadcasts = true` query filters across dedicated dialog search tabs.
+
+### 🎬 Video Re-Upload Thumbnail & Preview Engine
+- **Multi-Stage Thumbnail Recovery**: Never lose video previews when downloading and re-uploading media. The engine cascades through cached disk thumbnails, embedded `TL_photoStrippedSize` byte decoders, and direct video keyframe extraction.
+- **Parallel Preview Pre-Fetching**: Pre-fetches high-priority `PhotoSize` thumbnails simultaneously while downloading media, ensuring thumbnails are ready on disk when re-upload begins.
+- **Variable Framerate & PTS Fallback**: Keyframe extraction now samples both zero-offset and 1-second sync keyframes via `MediaMetadataRetriever` and native `AnimatedFileDrawable`, preventing black box thumbnails on web and variable-framerate streams.
+- **Video Document Thumbnail Auto-Generation**: Automatically attaches `TL_documentAttributeVideo` and video thumbnail previews when large videos are sent uncompressed as documents.
 
 ### 🤖 Smart Autonomous Auto-Reply Engine
 - **Autonomous Response Triggers**: Set flexible automated replies with custom keyword triggers, fallback default answers, and selective whitelist/blacklist filters across chats, groups, and contacts.
